@@ -1,0 +1,24 @@
+NULL EQU 0   ; Define NULL
+
+INCLUDELIB kernel32.lib
+INCLUDELIB user32.lib
+
+EXTERN ExitProcess@4:PROC
+EXTERN CreateFileA@28:PROC
+EXTERN ReadFile@20:PROC
+EXTERN CloseHandle@4:PROC
+EXTERN WriteConsoleA@20:PROC
+EXTERN GetStdHandle@4:PROC
+
+CreateFile EQU CreateFileA@28
+ReadFile EQU ReadFile@20
+CloseHandle EQU CloseHandle@4
+ExitProcess EQU ExitProcess@4
+WriteConsole EQU WriteConsoleA@20
+GetStdHandle EQU GetStdHandle@4
+
+INVALID_HANDLE_VALUE EQU -1
+GENERIC_READ EQU 80000000h
+OPEN_EXISTING EQU 3
+FILE_ATTRIBUTE_NORMAL EQU 80h
+STD_OUTPUT_HANDLE EQU -11
