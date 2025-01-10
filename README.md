@@ -1,4 +1,4 @@
-# 🛠️ Bubble Sort Assembly Program
+# 🛠️ Bubble Sort with Assembly (MASM)
 
 ## 🚀 How to Run
 
